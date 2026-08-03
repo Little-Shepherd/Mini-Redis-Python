@@ -42,19 +42,6 @@ client (redis-cli / telnet)
 | `src/store.py` | ~150 | ✅ Complete | In-memory store: `set/get/delete/exists`, TTL expiry, list operations |
 | `src/commands.py` | ~120 | ❌ 8 TODOs | Command handler functions that call Store methods |
 | `src/server.py` | ~80 | ✅ Complete | TCP server loop with RESP parsing and response encoding |
-| `tests/test_commands.py` | ~160 | Ready | Integration tests for all 8 command handlers |
-
-## Quick Start
-
-```bash
-# Run tests (all RED before implementing commands)
-make test
-
-# Run the server
-make run
-# In another terminal:
-redis-cli -p 6379 PING
-```
 
 ## Supported Commands
 
