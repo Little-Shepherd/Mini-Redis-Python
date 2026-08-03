@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `src/commands.py` file contains 8 command handler functions, each marked with `# TODO` and currently returning `pass`. Your task is to implement these functions so that all tests in `tests/test_commands.py` pass.
+The `src/commands.py` file contains 8 command handler functions, each marked with `# TODO` and currently returning `pass`. Your task is to implement these functions so that all commands behave correctly according to the check_items below.
 
 ## Architecture Context
 
@@ -126,6 +126,6 @@ Group 4 (LPUSH, LRANGE) ──────────────────�
 
 ## Acceptance Criteria
 
-1. `make test` passes all 23 test cases
+1. 编写测试代码验证所有 8 个命令行为，确保每项 check_items 通过
 2. Each handler's implementation fits the function's `check_items` listed above
-3. No changes to `protocol.py`, `store.py`, `server.py`, or test files
+3. No changes to `protocol.py`, `store.py`, or `server.py`
