@@ -1,7 +1,10 @@
 .PHONY: test run clean
 
 test:
-	PYTHONPATH=. python -m pytest tests/ -v
+	PYTHONPATH=lab python -m pytest verification/test_commands.py -v
+
+test-all:
+	PYTHONPATH=lab python -m pytest verification/ -v
 
 run:
 	PYTHONPATH=. python -m src.server

@@ -20,56 +20,45 @@ from src.store import Store
 
 
 def handle_ping(data: list[str], store: Store) -> str:
-    # TODO: implement me (5 lines)
-    # Hint: return "PONG"
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_ping not implemented")
 
 
 def handle_echo(data: list[str], store: Store) -> str:
-    # TODO: implement me (5 lines)
-    # Hint: data[1] is the message to echo back
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_echo not implemented")
 
 
 def handle_set(data: list[str], store: Store) -> str:
-    # TODO: implement me (15 lines)
-    # Hint: check data length, extract key/value, use store.set(...)
+    # TODO: implement me
     # SET key value → store.set(key, value); return "OK"
-    # SET key value EX seconds → compute ttl_ms = seconds * 1000, store.set(key, value, ttl_ms)
-    pass
+    # SET key value EX seconds → compute ttl_ms, store.set(key, value, ttl_ms)
+    raise NotImplementedError("handle_set not implemented")
 
 
 def handle_get(data: list[str], store: Store) -> str | None:
-    # TODO: implement me (8 lines)
-    # Hint: use store.get(key), return the value or None if not found
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_get not implemented")
 
 
 def handle_del(data: list[str], store: Store) -> int:
-    # TODO: implement me (10 lines)
-    # Hint: delete all specified keys, return count of keys deleted
-    # DEL key1 key2 key3 ... → call store.delete for each, return total
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_del not implemented")
 
 
 def handle_exists(data: list[str], store: Store) -> int:
-    # TODO: implement me (8 lines)
-    # Hint: use store.exists(*keys)
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_exists not implemented")
 
 
 def handle_lpush(data: list[str], store: Store) -> int:
-    # TODO: implement me (10 lines)
-    # Hint: extract key and values from data, use store.lpush(key, *values)
-    # Return the new list length
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_lpush not implemented")
 
 
 def handle_lrange(data: list[str], store: Store) -> list:
-    # TODO: implement me (12 lines)
-    # Hint: extract key, start, stop from data (convert start/stop to int)
-    # Use store.lrange(key, start, stop), return the list
-    pass
+    # TODO: implement me
+    raise NotImplementedError("handle_lrange not implemented")
 
 
 # ---- Command Registry ----
