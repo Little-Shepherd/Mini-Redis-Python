@@ -1,10 +1,10 @@
-.PHONY: test verify run clean
+.PHONY: test run clean
 
 test:
 	PYTHONPATH=lab python -m pytest lab/ -v
 
 verify:
-	PYTHONPATH=lab python -m pytest .verification_prebuilt/ -v
+	PYTHONPATH=lab python -m pytest verification/ -v
 
 run:
 	PYTHONPATH=. python -m src.server
