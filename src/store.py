@@ -92,7 +92,7 @@ class Store:
                 self._data[key] = []
                 self._expires.pop(key, None)
             lst = self._data[key]
-            for v in reversed(values):
+            for v in values:
                 lst.insert(0, v)
             return len(lst)
 
